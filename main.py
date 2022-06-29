@@ -2,15 +2,14 @@ import smtplib
 import requests
 from bs4 import BeautifulSoup
 
-MY_EMAIL = 'josephdeancardoza@gmail.com'
-MY_PASSWORD = 'xbnt kfsz eygv sbvz'
+MY_EMAIL = MY_EMAIL
+MY_PASSWORD = MY_PASSWORD
 AMAZON_URL = "https://www.amazon.com/Instant-Pot-Plus-60-Programmable/dp/B01NBKTPTS/" \
              "ref=dp_fod_2?pd_rd_i=B01NBKTPTS&psc=1"
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/103.0.0.0 Safari/537.36",
-    "Accept-Language": "en-US,en;q=0.9"
+    "User-Agent": USER-AGENT
+    "Accept-Language": ACCEPT LANGUAGE
 }  #amazon is funky and they require these headers. You can find YOUR computer info here: http://myhttpheader.com/
 
 response = requests.get(AMAZON_URL, headers=headers)
